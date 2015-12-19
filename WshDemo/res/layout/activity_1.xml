@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+	<EditText
+	    android:id="@+id/editttext1"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:ems="10"
+	    android:lines="1"
+	    android:hint="message"
+	    />
+	
+	<EditText 
+		android:id="@+id/edittext2"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/editttext1"
+		android:lines="1"
+		android:hint="installationID"	    
+	    />
+	<Button 
+	    android:id="@+id/button1"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/edittext2"
+	    android:text="Push message to all client"
+	    />
+	<Button 
+	    android:id="@+id/button2"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/button1"
+	    android:text="Push message to the"
+	    />
+</RelativeLayout>

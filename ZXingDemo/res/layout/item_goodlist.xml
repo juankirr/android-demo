@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/icon_item2"
+    android:descendantFocusability="blocksDescendants" >
+	<TextView
+	    android:id="@+id/item_goodlist_tv_mode"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true"
+	    android:paddingTop="8dp"
+	    android:paddingLeft="5dp"
+	    android:text="型号:"
+	    android:textColor="#000000"
+	    />    
+	<TextView 
+	    android:id="@+id/item_goodlist_tv_count"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_marginTop="3dp"
+	    android:paddingBottom="8dp"
+	    android:paddingLeft="5dp"
+	    android:layout_below="@id/item_goodlist_tv_mode"
+	    android:text="数量:"
+	    android:textColor="#000000"
+	    />
+	<Button 
+	    android:id="@+id/item_goodlist_bt_delete"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_centerVertical="true"
+	    android:background="#ecf0f1"
+	    android:drawableRight="@drawable/icon_delete"
+	    android:paddingRight="5dp"
+	    android:textColor="#000000"
+	    />
+</RelativeLayout>

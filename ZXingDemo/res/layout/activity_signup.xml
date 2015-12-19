@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+    
+	<EditText 
+	    android:id="@+id/a_signup_username"
+	    android:layout_width="250dp"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="140dp"
+	    android:singleLine="true"
+	    android:hint="账号:"
+	    android:layout_centerHorizontal="true"
+	    />
+	<EditText 
+	    android:id="@+id/a_signup_password"
+	    android:layout_width="250dp"
+	    android:layout_height="wrap_content"
+	    android:singleLine="true"
+	    android:hint="密码:"
+	    android:inputType="textPassword"
+	    android:layout_centerHorizontal="true"
+	    android:layout_below="@id/a_signup_username"
+	    />
+	<EditText 
+	    android:id="@+id/a_signup_passwordagain"
+	    android:layout_width="250dp"
+	    android:layout_height="wrap_content"
+	    android:singleLine="true"
+	    android:hint="再次输入密码:"
+	    android:inputType="textPassword"
+	    android:layout_centerHorizontal="true"
+	    android:layout_below="@id/a_signup_password"
+	    />
+	<EditText 
+	    android:id="@+id/a_signup_email"
+	    android:layout_width="250dp"
+	    android:layout_height="wrap_content"
+	    android:singleLine="true"
+	    android:hint="E-mail:"
+	    android:layout_centerHorizontal="true"
+	    android:layout_below="@id/a_signup_passwordagain"
+	    />
+	<Button 
+	    android:id="@+id/a_signup_signup"
+	    android:layout_width="250dp"
+	    android:layout_height="50dp"
+	    android:layout_centerHorizontal="true"
+	    android:layout_below="@id/a_signup_email"
+	    android:background="@drawable/icon_item"
+	    android:text="完成"
+	    />
+</RelativeLayout>

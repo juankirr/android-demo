@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:focusable="true" 
+	android:focusableInTouchMode="true"
+     >
+    <include 
+        android:id="@+id/a_search_topbar"
+        layout="@layout/view_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        />
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:orientation="vertical"
+        >
+        <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        >
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+				android:layout_alignParentLeft="true"
+				android:textColor="#000000"
+	            android:text="物品条码: "
+	            />
+	        <Switch 
+	            android:id="@+id/a_search_switch_number"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_alignParentRight="true"
+	            />
+	    </RelativeLayout>
+	    
+        <EditText 
+	            android:id="@+id/a_search_et_number"
+	            android:layout_width="250dp"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:paddingTop="10dp"
+	            android:hint="输入货物编码"
+	            />
+        <LinearLayout 
+            android:id="@+id/a_search_ll_no_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout 
+		    android:id="@+id/a_search_ll_mode"
+		    android:orientation="horizontal"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content">
+		    <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_vertical"
+		        android:textColor="#000000"
+		        android:text="物品型号: "
+		        />
+		    <EditText 
+	        	android:id="@+id/a_search_et_mode"
+	        	android:layout_width="250dp"
+	        	android:hint="不输入则默认全部型号"
+	        	android:layout_height="wrap_content"
+	        	/>
+		</LinearLayout>
+		
+		<LinearLayout 
+		    android:id="@+id/a_search_ll_state"
+		    android:orientation="horizontal"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content">
+		    <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_vertical"
+		        android:textColor="#000000"
+		        android:text="物品状态: "
+		        />
+		    <Spinner 
+	        	android:id="@+id/a_search_spn_state"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	/>
+		</LinearLayout>
+		
+		<LinearLayout 
+		    android:id="@+id/a_search_ll_manager"
+		    android:orientation="horizontal"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content">
+		    <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_vertical"
+		        android:textColor="#000000"
+		        android:text="操作人员: "
+		        />
+		    <EditText 
+		        android:id="@+id/a_search_et_manager"
+		        android:layout_width="250dp"
+		        android:hint="不输入则默认全部管理员"
+		        android:layout_height="wrap_content"
+		        />
+		</LinearLayout>
+		
+		<LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    >
+		    <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_vertical"
+		        android:textColor="#000000"
+		        android:text="时间筛选: "
+		        />
+		    <View 
+		        android:layout_width="0dp"
+		        android:layout_weight="1.0"
+		        android:layout_height="50dp"
+		        />
+		    <Switch 
+		        android:id="@+id/a_search_switch_time"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_vertical"
+		        />
+		</LinearLayout>
+		
+		<LinearLayout 
+		    android:id="@+id/a_search_ll_time"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    >
+		    <LinearLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="50dp"
+		        android:orientation="horizontal"
+		        >
+		        <TextView 
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:textColor="#000000"
+				    android:text="起始日期: "
+				    />
+		        <TextView 
+		            android:id="@+id/a_search_tv_from"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/icon_item"
+		            android:textColor="#000000"
+		            android:text="0000"
+		            />
+		    </LinearLayout>
+		    
+		    <LinearLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="50dp"
+		        android:orientation="horizontal"
+		        >
+		        <TextView 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:textColor="#000000"
+			    android:text="截止日期: "
+			    />
+		        <TextView 
+		            android:id="@+id/a_search_tv_to"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/icon_item"
+		            android:textColor="#000000"
+		            android:text="1111"
+		            />
+		    </LinearLayout>
+		    
+<!-- 			<DatePicker  -->
+<!-- 			    android:id="@+id/a_search_datepicker_from" -->
+<!-- 			    android:layout_width="match_parent" -->
+<!-- 			    android:layout_height="wrap_content" -->
+<!-- 			    /> -->
+<!-- 			<DatePicker  -->
+<!-- 			    android:id="@+id/a_search_datepicker_to" -->
+<!-- 			    android:layout_width="match_parent" -->
+<!-- 			    android:layout_height="wrap_content" -->
+<!-- 		    	/> -->
+
+		</LinearLayout>
+        </LinearLayout>
+		
+    </LinearLayout>
+    
+    <Button 
+        android:id="@+id/a_search_bt_submit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/icon_button1"
+        android:textColor="#ffffff"
+        android:text="查找"
+        />
+</LinearLayout>
